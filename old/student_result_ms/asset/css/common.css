@@ -1,0 +1,43 @@
+/*==========>(00)<---Common css start---><==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: 'opensansRegular';
+}
+
+@font-face {
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: 'robotoRegular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'opensansRegular';
+}
+
+p,
+body {
+    font-family: 'robotoRegular';
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/*==========>(00)<---Common css end---><==========*/

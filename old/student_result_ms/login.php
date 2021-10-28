@@ -27,11 +27,12 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 				$_SESSION["loggedIn"] = true;
 				header("Location: index.php"); // redirect to dashboard/indexpage
 				exit();
-			}			
+			}
+			
 		}
 	}
 
-    $_SESSION['error'] = 'Please correct username or password....';
+    $_SESSION['error'] = 'Please correct user name or password....';
     header("Location: login.php"); // redirect to login page
     exit();
 }
