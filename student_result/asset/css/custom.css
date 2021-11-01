@@ -1,0 +1,112 @@
+/*
+    Description: Student Management System Template
+    Author: Jayed Hoshen
+    E-mail: jayedkn64@gmail.com
+    Version: 0.1
+======================><---Table of Content---><======================
+    00. Common css
+    01. Header css 
+    02. Side menu css
+    03. Main content css
+    04. Footer part css
+*/
+
+
+/*==========>(00)<---Common css start---><==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: 'opensansRegular';
+}
+
+@font-face {
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: 'robotoRegular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'opensansRegular';
+}
+
+p,
+body {
+    font-family: 'robotoRegular';
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255, 166, 0, 0.514);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/*==========>(00)<---Common css end---><===============*/
+
+
+/*==========>(01)<---header css start---><=============*/
+
+#header_wrapper .logo {
+    width: 60px;
+    margin: auto;
+}
+
+#header_wrapper .logo a img {
+    width: 100%;
+    border-radius: 30%;
+    margin: 3px;
+}
+
+#header_wrapper .middle_content h2 {
+    padding: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 66%);
+    text-shadow: 3px 2px 10px rgb(168, 168, 168);
+}
+
+
+/*==========>(01)<---header css end---><===============*/
+
+
+/*==========>(02)<---side menu css start---><==========*/
+
+
+/*==========>(02)<---side menu css end---><============*/
+
+
+/*==========>(03)<---main content css start---><=======*/
+
+
+/*==========>(03)<---main content css end---><=========*/
+
+
+/*==========>(04)<---footer css start---><=============*/
+
+#footer_wrapper {
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+
+/*==========>(04)<---footer css end---><===============*/

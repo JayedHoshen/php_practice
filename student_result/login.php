@@ -32,7 +32,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 		}
 	}
 
-    $_SESSION['error'] = 'Please correct user name or password....';
+    $_SESSION['error'] = 'Please correct username or password....';
     header("Location: login.php"); // redirect to login page
     exit();
 }

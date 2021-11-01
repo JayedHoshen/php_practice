@@ -1,40 +1,23 @@
-<?php
-ob_start();
-session_start();
-
-if(! isset($_SESSION["loggedIn"]) ){
-	header("Location: login.php");
-	exit();
-}
-?>
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      	<meta charset="UTF-8">
-	  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-      	<title>Student || RMS</title>
-
-		<!-- ************ all css link *********************** -->
-		<link rel="stylesheet" href="./asset/css/bootstrap.min.css">
-	  	<link rel="stylesheet" href="./asset/css/all.min.css">
-	  	<link rel="stylesheet" href="./asset/css/common.css">
-   </head>
-   <body>			
-		<!-- ************ HEADER START *********************** -->
-		<?php include_once('./inc/header.php'); ?>
-
-		<!-- ************ MAIN CONTENT START ***************** -->
+<!--============ HEADER: php code ============-->
+<?php include_once('./inc/header.php'); ?>
 		
+<!--============ Side menu and main content:PHP/HTML code ============-->
+<div id="side_menu_wrapper" class="container-fluid">
+	<div class="row">
+		<!--============ Side menu: HTML code ============-->
+		<?php include_once('./inc/sidebar.php'); ?>
 
-        <!-- ************ FOOTER START *********************** -->
-		<?php include_once('./inc/footer.php'); ?>
+		<!--============ MAIN content: php code ============-->
+		<div class="col-lg-9">
+            <div class="main_content py-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque sed debitis impedit labore? Eaque inventore magni atque dolorum neque eius quae, tempora aliquam, facilis necessitatibus dolores, obcaecati pariatur asperiores!locale_get_regionlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eos quibusdam fugit assumenda libero molestiae repudiandae, quis commodi laudantium in, autem exercitationem. Iure vel necessitatibus saepe delectus labore laborum ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsa nulla nemo assumenda fuga distinctio praesentium modi dignissimos soluta incidunt maxime sunt, ex doloremque maiores magnam, cum optio id non!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque sed debitis impedit labore? Eaque inventore magni atque dolorum neque eius quae, tempora aliquam, facilis necessitatibus dolores, obcaecati pariatur asperiores!locale_get_regionlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eos quibusdam fugit assumenda libero molestiae repudiandae, quis commodi laudantium in, autem exercitationem. Iure vel necessitatibus saepe delectus labore laborum ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsa nulla nemo assumenda fuga distinctio praesentium modi dignissimos soluta incidunt maxime sunt, ex doloremque maiores magnam, cum optio id non!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque sed debitis impedit labore? Eaque inventore magni atque dolorum neque eius quae, tempora aliquam, facilis necessitatibus dolores, obcaecati pariatur asperiores!locale_get_regionlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eos quibusdam fugit assumenda libero molestiae repudiandae, quis commodi laudantium in, autem exercitationem. Iure vel necessitatibus saepe delectus labore laborum ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsa nulla nemo assumenda fuga distinctio praesentium modi dignissimos soluta incidunt maxime sunt, ex doloremque maiores magnam, cum optio id non!</p>
+            </div>
+        </div>
+    </div>
+</div>			
 
-    	<!-- *********** common plugin for all pages **********-->
-		<script src="./asset/js/jquery.min.js"></script>
-		<script src="./asset/js/all.min.js"></script>
-		<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-		<script src="./asset/js/bootstrap.min.js"></script>
-   </body>
-</html>
+<!--============ FOOTER: php code ============-->
+<?php include_once('./inc/footer.php'); ?>
 

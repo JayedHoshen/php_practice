@@ -1,34 +1,51 @@
+<?php
+ob_start();
+session_start();
+
+if(! isset($_SESSION["loggedIn"]) ){
+	header("Location: login.php");
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-    <head> </head>
-    <body>
-        <div class="container">
+   <head>
+      	<meta charset="UTF-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--============ Title: php code ============-->		
+      	<title>Student || RMS</title>
+
+        <!--============ CSS file: All external css file ============-->
+		<link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="./asset/css/all.min.css">
+	  	<link rel="stylesheet" href="./asset/css/custom.css">
+   </head>
+   <body>
+        <!--============ Header: HTML code ============-->
+        <div id="header_wrapper" class="container-fluid bg-secondary">
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- Logo start -->
+                <!-- logo start -->
+                <div class="col-lg-1">
                     <div class="logo">
                         <a href="index.php">
-                        <b>ST<span>UDE</span>NT<span>MS</span></b>
+                            <img src="./asset/img/admin_profile.jpg" alt="Admin Logo">
                         </a>
                     </div>
-                    <!-- menu start -->
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#home" class="active">home</a></li>
-                            <li><a href="#services">services</a></li>
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#portfolio">portfolio</a></li>
-                            <li><a href="#testimonials">testimonials</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
+                </div>
+                <!-- Middle content -->
+                <div class="col-lg-10">
+                    <div class="middle_content text-center">
+                        <h2>Student Result Management System Software</h2>
                     </div>
-                    <!-- menu end -->
-                    <!-- Log out btn -->
+                </div>
+                <!-- Log out btn -->
+                <div class="col-lg-1">
                     <div class="log_out_btn">
-                        <a class="logout" href="logout.php">Logout</a>
+                        <a class="btn btn-outline-primary w-100 text-white my-3" href="logout.php">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    

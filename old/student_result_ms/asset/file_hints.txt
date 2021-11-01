@@ -1,5 +1,0 @@
-00) my custom js file:custom.js 
-1) font awesome 5 using (all.min.css/js)
-2) bootstrap 4 using (bootstrap.min.js/css)
-3) fonts: Opensans is heading and Roboto is paragraph/others.
-4) jquery version: 2.2.4.min

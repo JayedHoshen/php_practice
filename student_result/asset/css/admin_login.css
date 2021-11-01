@@ -1,8 +1,20 @@
-/* ==>> include enternal css ==>>*/
+/*==========>(01)<---Admin Form css start---><==========*/
 
-@import url(../css/common.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/*==========>(01)<---Form css start---><==========*/
+@font-face {
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: 'opensansRegular';
+}
+
+@font-face {
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: 'robotoRegular';
+}
 
 .wrapper {
     background: url(../img/login_bg.jpg);
@@ -11,7 +23,7 @@
     background-size: cover;
 }
 
-.overly {
+.wrapper .overly {
     padding: 145px 0px;
     background: rgb(0 0 0 / 65%);
 }
@@ -76,4 +88,4 @@ input {
 }
 
 
-/*==========>(01)<---Form css end---><==========*/
+/*==========>(01)<---Admin Form css end---><==========*/
