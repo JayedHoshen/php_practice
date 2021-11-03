@@ -1,0 +1,6 @@
+Common format: 
+
+1) header.php
+2) self content ...........
+3) footer.php
+4) every page have title: add to header file.

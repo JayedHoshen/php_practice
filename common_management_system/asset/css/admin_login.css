@@ -1,0 +1,91 @@
+/*==========>(01)<---Admin Form css start---><==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: 'opensansRegular';
+}
+
+@font-face {
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: 'robotoRegular';
+}
+
+.wrapper {
+    background: url(../img/login_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .overly {
+    padding: 145px 0px;
+    background: rgb(0 0 0 / 65%);
+}
+
+.wrapper .overly .main_form {
+    width: 400px;
+    font-size: 20px;
+    font-family: 'openSansRegular';
+    padding: 25px;
+    margin: 0 auto;
+    word-spacing: 5px;
+    border-radius: 30px;
+    background-color: #adafb1;
+    box-shadow: 10px 10px 15px #000000bf;
+    text-shadow: -2px 3px 5px rgb(146 113 189);
+}
+
+.wrapper .overly .main_form h2 {
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 15px 10px #69a469;
+}
+
+.wrapper .overly .main_form span.error_msg {
+    font-size: 16px;
+    color: #ff000091;
+}
+
+.wrapper .overly .main_form form label,
+input {
+    display: inline-block;
+    width: 100%;
+    word-spacing: normal;
+}
+
+.wrapper .overly .main_form form label {
+    padding: 5px 0px;
+}
+
+.wrapper .overly .main_form form input {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.wrapper .overly .main_form form .login_btn {
+    margin-top: 30px;
+}
+
+.wrapper .overly .main_form form .login_btn input {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #2348f985;
+}
+
+
+/*==========>(01)<---Admin Form css end---><==========*/

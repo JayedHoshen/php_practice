@@ -21,20 +21,8 @@ if(! isset($_SESSION["loggedIn"]) ){
                     case 'add_student.php':
                         echo "Add New Student || SRMS";
                         break;
-                    case 'manage_student.php':
-                        echo "Manage Student || SRMS";
-                        break;
-                    case 'add_subject.php':
-                        echo "Add New Subject || SRMS";
-                        break;
-                    case 'manage_subject.php':
-                        echo "Manage Subject Info || SRMS";
-                        break;
-                    case 'create_result.php':
-                        echo "Create & Publish Result || SRMS";
-                        break;
-                    case 'view_result.php':
-                        echo "View & Download Result || SRMS";
+                    case 'add_class.php':
+                        echo "Add New Class || SRMS";
                         break;
                     default:
                         echo "Dashboard || SRMS";
