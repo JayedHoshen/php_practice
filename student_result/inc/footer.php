@@ -1,6 +1,4 @@
-            </div>
-        </div>
-    </div>	
+    </div></div></div></div></div></div>	
     <!--============ Footer: HTML code ============-->
     <div id="footer_wrapper" class="container-fluid text-center bg-secondary">
         <div class="row">
@@ -20,5 +18,7 @@
     <script src="./asset/js/all.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/jquery.dataTables.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
 </body>
 </html>

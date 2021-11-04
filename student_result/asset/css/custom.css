@@ -111,6 +111,13 @@ ol {
 
 /*==========>(03)<---main content css start---><=======*/
 
+h2.page_title {
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px dashed #aba3a3;
+    background-color: #ccc;
+}
+
 
 /*==========>(03)<---main content css end---><=========*/
 

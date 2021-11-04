@@ -1,6 +1,7 @@
 <?php
 ob_start();
 session_start();
+include_once ('connect.php'); // connecting db file
 
 if(! isset($_SESSION["loggedIn"]) ){
 	header("Location: login.php");
@@ -24,11 +25,17 @@ if(! isset($_SESSION["loggedIn"]) ){
                     case 'manage_student.php':
                         echo "Manage Student || SRMS";
                         break;
+                    case 'edit_student.php':
+                        echo "Edit & Update || SRMS";
+                        break;
                     case 'add_subject.php':
                         echo "Add New Subject || SRMS";
                         break;
                     case 'manage_subject.php':
                         echo "Manage Subject Info || SRMS";
+                        break;
+                    case 'edit_subject.php':
+                        echo "Edit & Update || SRMS";
                         break;
                     case 'create_result.php':
                         echo "Create & Publish Result || SRMS";
@@ -45,6 +52,7 @@ if(! isset($_SESSION["loggedIn"]) ){
         <!--============ CSS file: All external css file ============-->
 		<link rel="stylesheet" href="./asset/css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="./asset/css/all.min.css">
+        <link rel="stylesheet" href="./asset/css/jquery.dataTables.min.css">
 	  	<link rel="stylesheet" href="./asset/css/custom.css">
    </head>
    <body>
@@ -79,4 +87,7 @@ if(! isset($_SESSION["loggedIn"]) ){
             <div class="row">
                 <?php include_once('./inc/sidebar.php'); ?>
                 <div class="col-lg-9">
-    
+                    <div class="container-fluid p-2">
+                        <div class="row">
+                            <div class="col-lg-12 py-0">
+        

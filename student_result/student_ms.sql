@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2021 at 06:04 AM
+-- Generation Time: Nov 04, 2021 at 07:01 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -33,18 +33,33 @@ CREATE TABLE `student_info` (
   `do_birth` date NOT NULL,
   `tech` varchar(100) NOT NULL,
   `sem` tinyint(1) NOT NULL,
-  `nid_no` text NOT NULL,
   `address` varchar(255) NOT NULL,
   `mobile` varchar(11) NOT NULL,
-  `status` tinyint(1) NOT NULL
+  `status` tinyint(1) NOT NULL,
+  `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`id`, `name`, `roll`, `do_birth`, `tech`, `sem`, `nid_no`, `address`, `mobile`, `status`) VALUES
-(1, 'Jayed', 101, '2016-09-14', 'Computer', 5, '2565665622565', 'tungipara, gopalgong, padma.', '12345678941', 1);
+INSERT INTO `student_info` (`id`, `name`, `roll`, `do_birth`, `tech`, `sem`, `address`, `mobile`, `status`, `reg_date`) VALUES
+(1, 'Jayed', 101, '2016-09-14', 'Computer', 6, 'tungipara, gopalgong.', '12345678941', 1, '2021-11-04 17:14:37'),
+(2, 'Hoshen', 102, '2016-09-18', 'Computer', 5, 'tungipara, gopalgong, padma.', '1234567891', 1, '2021-11-04 15:44:11'),
+(8, 'jayed', 110, '2021-11-04', 'Civil', 1, 'Tungipara, gopalgonj, Padma, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
+(9, 'Tahoma', 100, '2021-11-24', 'RAC', 2, 'Bagerhat, Khulna, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
+(10, 'abc', 111, '1990-08-01', 'RAC', 2, 'Khulna, Bangladesh', '01910457458', 1, '2021-11-04 16:53:56'),
+(11, 'a', 501, '1997-05-05', 'Electrical', 2, 'Dhaka, Bangladesh', '45612387', 1, '2021-11-04 15:44:11'),
+(12, 'ami', 1001, '2006-02-15', 'tech', 7, 'Dhaka, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
+(13, 'Jayed', 414, '2021-11-01', 'Computer', 5, 'fafjafhh', '12345678925', 1, '2021-11-04 15:44:11'),
+(20, 'Jayed Hosen', 201, '2001-05-05', 'Computer', 5, 'Tungipara, Gopalgonj, Dhaka', '01987375377', 1, '2021-11-04 16:50:08'),
+(15, 'Jaye', 1452, '2021-11-16', 'Computer', 1, 'Dhaka, Bangladesh', '32165475351', 1, '2021-11-04 15:44:11'),
+(16, 'Tahoma', 524, '2021-11-21', 'Electrical', 4, 'Bagerhat, Khulna, Bangladesh', '32165475351', 1, '2021-11-04 15:44:11'),
+(17, 'Jayed', 333, '2021-12-04', 'Civil', 6, 'Bagerhat, Khulna, Bangladesh', '123455', 1, '2021-11-04 15:44:11'),
+(18, 'Jayed Hoshen', 301, '2001-05-05', 'Civil', 5, 'Tungipara, Gopalgonj, Dhaka, Bangladesh', '01987375377', 1, '2021-11-04 15:44:11'),
+(19, 'Jayed Hoshen', 100, '1997-05-01', 'Computer', 6, 'Tungipara, Gopalgonj, Dhaka, Bangladesh', '01987375377', 1, '2021-11-04 15:46:19'),
+(21, 'Bangladesh', 8, '1971-12-16', 'IT', 1, 'Dhaka, Bangladesh', '00000000000', 1, '2021-11-04 17:25:33'),
+(22, 'Jayed', 20, '2025-06-04', 'Computer', 3, 'Tungipara, Gopalgonj, Dhaka', '00000000000', 1, '2021-11-04 17:28:28');
 
 -- --------------------------------------------------------
 
@@ -121,7 +136,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `student_info`
 --
 ALTER TABLE `student_info`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `subject`
 --
