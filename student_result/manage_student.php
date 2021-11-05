@@ -49,7 +49,7 @@
                 <th>Technology</th>
                 <th>Semister</th>
                 <th>Mobile</th>
-                <th>Admis_date</th>
+                <th>Admission_date</th>
                 <th>Status</th>
                 <th>Action</th>
             </tr>

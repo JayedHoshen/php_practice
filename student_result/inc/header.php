@@ -48,7 +48,8 @@ if(! isset($_SESSION["loggedIn"]) ){
                 }
 			?>
 		</title>
-
+        <!-- Favicons -->
+        <link href="./asset/img/man.png" rel="icon">
         <!--============ CSS file: All external css file ============-->
 		<link rel="stylesheet" href="./asset/css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="./asset/css/all.min.css">

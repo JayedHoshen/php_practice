@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2021 at 07:01 PM
+-- Generation Time: Nov 05, 2021 at 06:18 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -45,7 +45,7 @@ CREATE TABLE `student_info` (
 
 INSERT INTO `student_info` (`id`, `name`, `roll`, `do_birth`, `tech`, `sem`, `address`, `mobile`, `status`, `reg_date`) VALUES
 (1, 'Jayed', 101, '2016-09-14', 'Computer', 6, 'tungipara, gopalgong.', '12345678941', 1, '2021-11-04 17:14:37'),
-(2, 'Hoshen', 102, '2016-09-18', 'Computer', 5, 'tungipara, gopalgong, padma.', '1234567891', 1, '2021-11-04 15:44:11'),
+(2, 'Mohammad Jayed', 102, '1999-02-20', 'computer', 4, 'tungipara, gopalgong.', '01245975412', 1, '2021-11-05 17:14:52'),
 (8, 'jayed', 110, '2021-11-04', 'Civil', 1, 'Tungipara, gopalgonj, Padma, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
 (9, 'Tahoma', 100, '2021-11-24', 'RAC', 2, 'Bagerhat, Khulna, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
 (10, 'abc', 111, '1990-08-01', 'RAC', 2, 'Khulna, Bangladesh', '01910457458', 1, '2021-11-04 16:53:56'),
@@ -69,21 +69,28 @@ INSERT INTO `student_info` (`id`, `name`, `roll`, `do_birth`, `tech`, `sem`, `ad
 
 CREATE TABLE `subject` (
   `id` int(11) NOT NULL,
-  `name` varchar(150) NOT NULL,
+  `name` varchar(250) NOT NULL,
   `code` int(10) NOT NULL,
-  `f_mark` tinyint(5) NOT NULL,
-  `tc_mark` tinyint(5) NOT NULL,
-  `tf_mark` tinyint(5) NOT NULL,
-  `pc_mark` tinyint(5) NOT NULL,
-  `pf_mark` tinyint(5) NOT NULL
+  `f_mark` int(5) NOT NULL,
+  `tc_mark` int(5) NOT NULL,
+  `tf_mark` int(5) NOT NULL,
+  `pc_mark` int(5) NOT NULL,
+  `pf_mark` int(5) NOT NULL,
+  `add_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `subject`
 --
 
-INSERT INTO `subject` (`id`, `name`, `code`, `f_mark`, `tc_mark`, `tf_mark`, `pc_mark`, `pf_mark`) VALUES
-(1, 'Web Development Project', 66654, 100, 0, 0, 50, 50);
+INSERT INTO `subject` (`id`, `name`, `code`, `f_mark`, `tc_mark`, `tf_mark`, `pc_mark`, `pf_mark`, `add_date`) VALUES
+(1, 'Web Development Project', 66654, 100, 0, 0, 50, 50, '2021-11-05 16:02:27'),
+(2, 'Accounting Theory & Practice', 65851, 150, 40, 60, 50, 0, '2021-11-05 17:15:34'),
+(3, 'Operating System', 68546, 150, 40, 60, 25, 25, '2021-11-05 16:24:17'),
+(4, 'Programming In Java', 66651, 150, 40, 60, 25, 25, '2021-11-05 16:40:31'),
+(5, 'Surveillance Security System', 66652, 150, 20, 30, 50, 50, '2021-11-05 16:48:47'),
+(6, 'Sequential Logic System', 66653, 200, 60, 90, 25, 25, '2021-11-05 16:50:16'),
+(7, 'PCB Design & Circuit Making', 66655, 100, 0, 0, 50, 50, '2021-11-05 17:10:27');
 
 -- --------------------------------------------------------
 
@@ -94,16 +101,17 @@ INSERT INTO `subject` (`id`, `name`, `code`, `f_mark`, `tc_mark`, `tf_mark`, `pc
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(255) NOT NULL,
-  `user_password` varchar(255) NOT NULL
+  `user_password` varchar(255) NOT NULL,
+  `create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `user_name`, `user_password`) VALUES
-(1, 'jayed', '12345'),
-(2, 'admin', '123456');
+INSERT INTO `user` (`user_id`, `user_name`, `user_password`, `create_date`) VALUES
+(1, 'jayed', '12345', '2021-11-05 16:04:18'),
+(2, 'admin', '123456', '2021-11-05 16:04:18');
 
 --
 -- Indexes for dumped tables
@@ -141,7 +149,7 @@ ALTER TABLE `student_info`
 -- AUTO_INCREMENT for table `subject`
 --
 ALTER TABLE `subject`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `user`
 --
