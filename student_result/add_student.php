@@ -10,7 +10,7 @@
         $stdSem = $_POST['inputSem'];
         $stdAddress = $_POST['inputAddress'];
         $stdMob = $_POST['inputMobile'];
-        $stdStatus = true;
+        $stdStatus = 1;
 
         // database query
         $query = "INSERT INTO  student_info (name, roll, do_birth, tech, sem, address, mobile, status)
@@ -63,7 +63,7 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="inputSe">Semister</label>
-                <input name="inputSem" type="text" class="form-control" id="inputSe" placeholder="1, 2, 3..." required>
+                <input name="inputSem" type="number" class="form-control" id="inputSe" placeholder="1, 2, 3..." required>
             </div>
             <div class="form-group col-md-8">
                 <label for="inputMobil">Mobile Number</label>

@@ -18,6 +18,7 @@
         	$student_sem = '';
         	$student_address = '';
         	$student_mobile = '';
+        	$student_status = '';
         	
         	// show data from database
         	if (mysqli_num_rows($result) > 0) {
@@ -29,6 +30,7 @@
         			$student_sem = $row['sem'];
         			$student_address = $row['address'];
         			$student_mobile = $row['mobile'];
+        			$student_status = $row['status'];
         		}
         	}
         ?>
@@ -57,11 +59,15 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="inputSe">Semister</label>
-                <input name="inputSe" type="text" class="form-control" id="inputSe" value="<?php echo $student_sem; ?>" required>
+                <input name="inputSe" type="number" class="form-control" id="inputSe" value="<?php echo $student_sem; ?>" required>
             </div>
-            <div class="form-group col-md-8">
+            <div class="form-group col-md-6">
                 <label for="inputMobil">Mobile Number</label>
-                <input name="inputMobil" type="text" class="form-control" id="inputMobil" value="<?php echo $student_mobile; ?>" required>
+                <input name="inputMobil" type="number" class="form-control" id="inputMobil" value="<?php echo $student_mobile; ?>" required>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputStatus">Status</label>
+                <input name="inputStatus" type="number" class="form-control" id="inputStatus" value="<?php echo $student_status; ?>" required>
             </div>
         </div>
         <div class="form-row">

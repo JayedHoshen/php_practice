@@ -31,14 +31,14 @@
         </div>
         <!-- Subject start -->
         <div class="card">
-            <div class="card-header p-0" id="headingFour">
+            <div class="card-header p-0" id="headingThree">
                 <h2 class="mb-0">
-                    <button class="p-3 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="p-3 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <i class="fas fa-book-reader"></i> Subjects &nbsp;<i class="fas fa-greater-than"></i>
                     </button>
                 </h2>
             </div>
-            <div id="collapseFour" class="collapse sub_menu_style" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse sub_menu_style" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
                         <li><a href="add_subject.php">Add Subject Information</a></li>
@@ -49,14 +49,14 @@
         </div>
         <!-- Result start-->
         <div class="card">
-            <div class="card-header p-0" id="headingFive">
+            <div class="card-header p-0" id="headingFour">
                 <h2 class="mb-0">
-                    <button class="p-3 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <button class="p-3 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <i class="fas fa-database"></i> Result &nbsp;<i class="fas fa-greater-than"></i>
                     </button>
                 </h2>
             </div>
-            <div id="collapseFive" class="collapse sub_menu_style" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div id="collapseFour" class="collapse sub_menu_style" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
                         <li><a href="create_result.php">Create Result</a></li>
@@ -67,12 +67,20 @@
         </div>
         <!-- Admin start -->
         <div class="card">
-            <div class="card-header p-0" id="headingOne">
+            <div class="card-header p-0" id="headingFive">
                 <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left p-3" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="fas fa-users-cog"></i>Manage Admin
+                    <button class="p-3 btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <i class="fas fa-users-cog"></i> Manage Admin &nbsp;<i class="fas fa-greater-than"></i>
                     </button>
                 </h2>
+            </div>
+            <div id="collapseFive" class="collapse sub_menu_style" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li><a href="#">Admin Permission</a></li>
+                        <li><a href="admin_pwd_change.php">Change Password</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

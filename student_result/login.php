@@ -27,8 +27,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
 				$_SESSION["loggedIn"] = true;
 				header("Location: index.php"); // redirect to dashboard/indexpage
 				exit();
-			}
-			
+			}			
 		}
 	}
 

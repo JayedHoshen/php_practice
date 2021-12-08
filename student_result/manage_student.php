@@ -11,10 +11,11 @@
         $stdSe = $_POST['inputSe'];
         $stdAddres = $_POST['inputAddres'];
         $stdMobile = $_POST['inputMobil'];
+        $stdStatus = $_POST['inputStatus'];
 
         // database query
         $query = "UPDATE  student_info 
-        SET name = '$stdNam', roll = '$stdRol', do_birth = '$stdDob', tech = '$stdTec', sem = '$stdSe', address = '$stdAddres', mobile = '$stdMobile' WHERE id = '$std_id'";
+        SET name = '$stdNam', roll = '$stdRol', do_birth = '$stdDob', tech = '$stdTec', sem = '$stdSe', address = '$stdAddres', mobile = '$stdMobile', status = '$stdStatus' WHERE id = '$std_id'";
 
         $result = mysqli_query($connection, $query);
 

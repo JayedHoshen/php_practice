@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2021 at 06:18 PM
+-- Generation Time: Nov 06, 2021 at 06:31 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -45,21 +45,22 @@ CREATE TABLE `student_info` (
 
 INSERT INTO `student_info` (`id`, `name`, `roll`, `do_birth`, `tech`, `sem`, `address`, `mobile`, `status`, `reg_date`) VALUES
 (1, 'Jayed', 101, '2016-09-14', 'Computer', 6, 'tungipara, gopalgong.', '12345678941', 1, '2021-11-04 17:14:37'),
-(2, 'Mohammad Jayed', 102, '1999-02-20', 'computer', 4, 'tungipara, gopalgong.', '01245975412', 1, '2021-11-05 17:14:52'),
+(2, 'Mohammad', 102, '1999-02-20', 'computer', 4, 'tungipara, gopalgong.', '01245975412', 1, '2021-11-06 17:30:19'),
 (8, 'jayed', 110, '2021-11-04', 'Civil', 1, 'Tungipara, gopalgonj, Padma, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
 (9, 'Tahoma', 100, '2021-11-24', 'RAC', 2, 'Bagerhat, Khulna, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
-(10, 'abc', 111, '1990-08-01', 'RAC', 2, 'Khulna, Bangladesh', '01910457458', 1, '2021-11-04 16:53:56'),
+(10, 'abc', 111, '1990-08-01', 'RAC', 2, 'Khulna, Bangladesh', '01910457458', 0, '2021-11-06 14:21:37'),
 (11, 'a', 501, '1997-05-05', 'Electrical', 2, 'Dhaka, Bangladesh', '45612387', 1, '2021-11-04 15:44:11'),
-(12, 'ami', 1001, '2006-02-15', 'tech', 7, 'Dhaka, Bangladesh', '12345678925', 1, '2021-11-04 15:44:11'),
+(12, 'ami', 1001, '2006-02-15', 'tech', 7, 'Dhaka, Bangladesh', '12345678925', 0, '2021-11-06 14:21:47'),
 (13, 'Jayed', 414, '2021-11-01', 'Computer', 5, 'fafjafhh', '12345678925', 1, '2021-11-04 15:44:11'),
 (20, 'Jayed Hosen', 201, '2001-05-05', 'Computer', 5, 'Tungipara, Gopalgonj, Dhaka', '01987375377', 1, '2021-11-04 16:50:08'),
-(15, 'Jaye', 1452, '2021-11-16', 'Computer', 1, 'Dhaka, Bangladesh', '32165475351', 1, '2021-11-04 15:44:11'),
+(15, 'Jaye', 1452, '2021-11-16', 'Computer', 1, 'Dhaka, Bangladesh', '32165475351', 0, '2021-11-06 14:22:02'),
 (16, 'Tahoma', 524, '2021-11-21', 'Electrical', 4, 'Bagerhat, Khulna, Bangladesh', '32165475351', 1, '2021-11-04 15:44:11'),
 (17, 'Jayed', 333, '2021-12-04', 'Civil', 6, 'Bagerhat, Khulna, Bangladesh', '123455', 1, '2021-11-04 15:44:11'),
 (18, 'Jayed Hoshen', 301, '2001-05-05', 'Civil', 5, 'Tungipara, Gopalgonj, Dhaka, Bangladesh', '01987375377', 1, '2021-11-04 15:44:11'),
 (19, 'Jayed Hoshen', 100, '1997-05-01', 'Computer', 6, 'Tungipara, Gopalgonj, Dhaka, Bangladesh', '01987375377', 1, '2021-11-04 15:46:19'),
 (21, 'Bangladesh', 8, '1971-12-16', 'IT', 1, 'Dhaka, Bangladesh', '00000000000', 1, '2021-11-04 17:25:33'),
-(22, 'Jayed', 20, '2025-06-04', 'Computer', 3, 'Tungipara, Gopalgonj, Dhaka', '00000000000', 1, '2021-11-04 17:28:28');
+(22, 'Jayed', 20, '2025-06-04', 'Computer', 3, 'Tungipara, Gopalgonj, Dhaka', '00000000000', 1, '2021-11-04 17:28:28'),
+(23, 'Mehrab Hussain', 805, '2016-07-07', 'Textile', 4, 'Bagerhat, Khulna, Bangladesh', '01687375375', 1, '2021-11-06 14:21:30');
 
 -- --------------------------------------------------------
 
@@ -85,12 +86,13 @@ CREATE TABLE `subject` (
 
 INSERT INTO `subject` (`id`, `name`, `code`, `f_mark`, `tc_mark`, `tf_mark`, `pc_mark`, `pf_mark`, `add_date`) VALUES
 (1, 'Web Development Project', 66654, 100, 0, 0, 50, 50, '2021-11-05 16:02:27'),
-(2, 'Accounting Theory & Practice', 65851, 150, 40, 60, 50, 0, '2021-11-05 17:15:34'),
+(2, 'Accounting Theory & Practice', 65851, 150, 40, 60, 25, 25, '2021-11-06 14:38:36'),
 (3, 'Operating System', 68546, 150, 40, 60, 25, 25, '2021-11-05 16:24:17'),
 (4, 'Programming In Java', 66651, 150, 40, 60, 25, 25, '2021-11-05 16:40:31'),
 (5, 'Surveillance Security System', 66652, 150, 20, 30, 50, 50, '2021-11-05 16:48:47'),
 (6, 'Sequential Logic System', 66653, 200, 60, 90, 25, 25, '2021-11-05 16:50:16'),
-(7, 'PCB Design & Circuit Making', 66655, 100, 0, 0, 50, 50, '2021-11-05 17:10:27');
+(7, 'PCB Design & Circuit Making', 66655, 100, 0, 0, 50, 50, '2021-11-05 17:10:27'),
+(8, 'Construction Process-1', 67552, 150, 40, 60, 25, 25, '2021-11-06 14:26:01');
 
 -- --------------------------------------------------------
 
@@ -111,7 +113,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`user_id`, `user_name`, `user_password`, `create_date`) VALUES
 (1, 'jayed', '12345', '2021-11-05 16:04:18'),
-(2, 'admin', '123456', '2021-11-05 16:04:18');
+(2, 'admin', '123456', '2021-11-06 17:27:40');
 
 --
 -- Indexes for dumped tables
@@ -144,12 +146,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `student_info`
 --
 ALTER TABLE `student_info`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT for table `subject`
 --
 ALTER TABLE `subject`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `user`
 --
